@@ -1,0 +1,41 @@
+<html lang="en">
+<style>
+
+</style>
+<script type="text/javascript" langauge="JavaScript">
+	function clearUp() {
+		document.info.elements[0].value=""
+		document.info.elements[1].value=""
+		document.info.elements[2].value=""
+}
+
+function verify() {
+	if (document.info.elements[2].value == "" {
+		console.log("Please Fill In The Password");
+	}
+	
+}
+</script>
+<head>
+<title>Fundy Films-Login</title>
+</head>
+<body>
+<center><h1>Account Login:</h1></center>
+<div>
+<form name="info">
+<center>First Name: <input type="text" size="20" name="firstname" />&nbsp;&nbsp;&nbsp;
+Account: <input type="text" size="20" name="account" /><br /><br />
+Password: <input type=password size="6" name="password" maxlength="6" /><br /><br />
+
+</center>
+
+		 
+<p><center><address><a href="mailto:fundyfilms@gmail.com?subject=Forgot My Password!">Forgot Password</a>&emsp;
+<input type="button" value="Clear Form" onClick = "clearUp();">&emsp;
+<input type="button" value="Login" onEnter="verify()" onClick="submitted()"<br /></address></center></p>
+<i class="bi bi-eye-slash" id="togglePassword/>
+</form>
+</div>
+	
+</body>
+</html>
