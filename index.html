@@ -11,9 +11,14 @@
 
 function verify() {
 	if (document.info.elements[2].value == "" {
-		console.log("Please Fill In The Password");
+		alert("Please Fill In The Password");
 	}
-	
+	else {
+		submitted()
+	}
+}
+function clearUp() {
+	console.log("Form cleared")
 }
 </script>
 <head>
@@ -31,8 +36,8 @@ Password: <input type=password size="6" name="password" maxlength="6" /><br /><b
 
 		 
 <p><center><address><a href="mailto:fundyfilms@gmail.com?subject=Forgot My Password!">Forgot Password</a>&emsp;
-<input type="button" value="Clear Form" onClick = "clearUp();">&emsp;
-<input type="button" value="Login" onEnter="verify()" onClick="submitted()"<br /></address></center></p>
+<input type="button" value="Clear Form" onClick= "clearUp();"/>&emsp;
+<input type="button" value="Login" onEnter="verify()" onClick="submitted()"/></address></center></p>
 <i class="bi bi-eye-slash" id="togglePassword/>
 </form>
 </div>
